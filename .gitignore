@@ -1,12 +1,17 @@
-# Ignorar entorno virtual
-venv/
+# ------------------------------------
+# BACKEND (Django)
+# ------------------------------------
+venv/                 # Entorno virtual
 *.pyc
-
-# Ignorar archivos generados por Django
 __pycache__/
-*.sqlite3
-/media/   # ¡IMPORTANTE! Las imágenes subidas no deben ir a Git
+*.sqlite3             # Base de datos local
+/media/               # Archivos subidos (fotos de propiedades)
+.env                  # Variables de entorno/secretos
 
-# Ignorar archivos del Frontend (ya tiene su propio gitignore)
-/frontend/node_modules
-/frontend/dist
+# ------------------------------------
+# FRONTEND (React/Vite)
+# ------------------------------------
+/frontend/node_modules # Dependencias de Node
+/frontend/dist         # Archivos de build listos para producción
+/frontend/package-lock.json
+/frontend/yarn.lock
