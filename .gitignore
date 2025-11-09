@@ -1,0 +1,12 @@
+# Ignorar entorno virtual
+venv/
+*.pyc
+
+# Ignorar archivos generados por Django
+__pycache__/
+*.sqlite3
+/media/   # ¡IMPORTANTE! Las imágenes subidas no deben ir a Git
+
+# Ignorar archivos del Frontend (ya tiene su propio gitignore)
+/frontend/node_modules
+/frontend/dist
