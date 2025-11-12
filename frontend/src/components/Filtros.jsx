@@ -65,7 +65,7 @@ const Filtros = ({ onApplyFilters }) => {
                     />
                 </div>
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">Ambientes (mínimo)</label>
+                    <label className="block text-sm font-medium text-gray-700">Ambientes</label>
                     <input
                         type="number"
                         name="ambientes"
